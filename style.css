@@ -1,0 +1,172 @@
+@import url('https://fonts.googleapis.com/css2?family=Russo+One&display=swap');
+
+*{
+    padding: 0; 
+    margin: 0;
+    box-sizing: border-box;
+}
+
+html {
+    scroll-behavior: smooth;
+    font-size: 62.5%;
+    font-family: 'Russo One', sans-serif;
+}
+
+body {
+    background-color: #2c2f33;
+    background-image: url(images/cool-background\ \(2\).png);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+}
+
+.shortText {
+    display: none;
+}
+
+:root {
+    --primary: #8c38ff;
+    --light: #EEEEEE;
+    --dark: #212121 
+}
+
+.logoWhite {
+    width: 3.9rem;
+    margin-right: 6px; 
+}
+
+/* navbar */
+
+li {
+    list-style: none;
+}
+
+a {
+    text-decoration: none;
+}
+
+.header{
+    border-bottom: 3px solid var(--primary);
+}
+
+.navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 2.5rem 5.5rem;
+    background-color: var(--dark);
+}
+
+.hamburger {
+    display: none;
+}
+
+.bar {
+    display: block;
+    width: 25px;
+    height: 3px;
+    margin: 5px auto;
+    -webkit-transition: all 0.3s ease-in-out;
+    transition: all 0.3s ease-in-out;
+    background-color: #101010;
+}
+
+.nav-menu {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.nav-item {
+    margin-left: 5rem;
+}
+
+.nav-link{
+    font-size: 1.6rem;
+    font-weight: 400;
+    color: var(--light);
+}
+
+.nav-link:hover{
+    color: var(--primary);
+}
+
+.nav-logo {
+    display: flex;
+    align-items: center; /* Center vertically */
+
+    font-size: 2.5rem;
+    font-weight: 540;
+    color: var(--light);
+}
+
+@media only screen and (max-width: 800px) {
+    .nav-menu {
+        position: fixed;
+        left: -100%;
+        top: 10rem;
+        flex-direction: column;
+        background: rgba(0, 0, 0, .1);
+        backdrop-filter: blur(10px);
+        z-index: 1000;
+        border-radius: 10px;
+        width: 100%;
+        text-align: center;
+        transition: 0.3s;
+        box-shadow:
+            0 10px 27px rgba(0, 0, 0, 0.05);
+    }
+
+    .nav-menu.active {
+        left: 0;
+    }
+
+    .nav-item {
+        margin: 2.5rem 0;
+    }
+
+    .hamburger {
+        display: block;
+        cursor: pointer;
+    }
+
+}
+@media (max-width: 900px) {
+
+    .navbar {
+        padding: 2.5rem 2.5rem;
+    }
+
+}
+
+@media (max-width: 440px) {
+    .nav-logo {
+        font-size: 2.15rem;
+    }
+
+    .logoWhite {
+        width: 3.3rem;
+    }
+
+    .shortText {
+        display: block;
+    }
+
+    .longText {
+        display: none;
+    }
+
+}
+/* navbar end */
+
+.container {
+    background-color: #282b30;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 40%;
+    text-align: center;
+    height: 60vh;
+}
+
