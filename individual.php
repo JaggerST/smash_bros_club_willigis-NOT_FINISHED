@@ -30,13 +30,13 @@
             </div>
             <ul class="nav-menu">
                 <li class="nav-item">
-                    <a href="#" class="nav-link">Home</a>
+                    <a href="index.html" class="nav-link">Home</a>
                 </li>
                 <li class="nav-item">
                     <a href="players.php" class="nav-link">Spieler</a>
                 </li>
                 <li class="nav-item">
-                    <a href="#" class="nav-link">Liga</a>
+                    <a href="table.php?season=1" class="nav-link">Liga</a>
                 </li>
                 <li class="nav-item">
                     <a href="#" class="nav-link">Turniere</a>
